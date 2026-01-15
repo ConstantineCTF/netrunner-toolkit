@@ -138,10 +138,10 @@ For Kali Linux and similar penetration testing distributions:
 ```bash
 # Clone or download the toolkit
 cd ~
-git clone https://github.com/ConstantineCTF/ejpt_toolkit.git
+git clone https://github.com/ConstantineCTF/netrunner-toolkit.git
 # OR manually download and extract
 # Navigate to toolkit directory
-cd ejpt_toolkit
+cd netrunner-toolkit
 # Install Python dependencies
 pip3 install -r requirements.txt
 # Verify installation
