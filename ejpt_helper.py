@@ -30,7 +30,7 @@ class NetRunner:
         """Display cyberpunk-themed banner - Night City Edition"""
         banner = f"""
 {Colors.NEON_PINK}    ╔═══════════════════════════════════════════════════════════════════════╗{Colors.END}
-{Colors.NEON_PINK}     {Colors.NEON_CYAN}サイバーパンク  {Colors.NEON_PINK}◢◤◢◤◢◤  {Colors.NEON_GREEN}NEURAL INTERFACE  {Colors.NEON_PINK}◢◤◢◤◢◤  {Colors.NEON_YELLOW}2077{Colors.NEON_PINK}  {Colors.END}
+{Colors.NEON_PINK}          {Colors.NEON_CYAN}サイバーパンク  {Colors.NEON_PINK}◢◤◢◤◢◤  {Colors.NEON_GREEN}NEURAL INTERFACE  {Colors.NEON_PINK}◢◤◢◤◢◤  {Colors.NEON_YELLOW}2077{Colors.NEON_PINK}  {Colors.END}
 {Colors.NEON_PINK}    ╚═══════════════════════════════════════════════════════════════════════╝{Colors.END}
 
 {Colors.NEON_CYAN}        ███╗   ██╗███████╗████████╗██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗███████╗██████╗ 
