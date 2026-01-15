@@ -27,28 +27,33 @@ class NetRunner:
         self.report_gen = ReportGenerator(self.workspace, self.logger)
 
     def cyber_banner(self):
-        """Display cyberpunk-themed banner"""
-        banner = f"""
-{Colors.NEON_CYAN}╔═════════════════════════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                                                       ║
-║  {Colors.NEON_PINK}███╗   ██╗███████╗████████╗██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗███████╗██████╗{Colors.NEON_CYAN}  ║
-║  {Colors.NEON_PINK}████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║   ██║████╗  ██║████╗  ██║██╔════╝██╔══██╗{Colors.NEON_CYAN} ║
-║  {Colors.NEON_PINK}██╔██╗ ██║█████╗     ██║   ██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║█████╗  ██████╔╝{Colors.NEON_CYAN} ║
-║  {Colors.NEON_PINK}██║╚██╗██║██╔══╝     ██║   ██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║██╔══╝  ██╔══██╗{Colors.NEON_CYAN} ║
-║  {Colors.NEON_PINK}██║ ╚████║███████╗   ██║   ██║  ██║╚██████╔╝██║ ╚████║██║ ╚████║███████╗██║  ██║{Colors.NEON_CYAN} ║
-║  {Colors.NEON_PINK}╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝{Colors.NEON_CYAN} ║
-║                                                                                                                       ║
-║          {Colors.NEON_PURPLE}eJPT Security Assessment Framework v2.0{Colors.NEON_CYAN}                                ║
-║          {Colors.NEON_GREEN}Neural Interface:  ACTIVE | Status:  OPERATIONAL{Colors.NEON_CYAN}                        ║
-╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝{Colors.END}
+    """Display cyberpunk-themed banner - Night City Edition"""
+    banner = f"""
+{Colors.NEON_PINK}    ╔═══════════════════════════════════════════════════════════════════════╗{Colors.END}
+{Colors.NEON_PINK}    ║ {Colors.NEON_CYAN}サイバーパンク  {Colors.NEON_PINK}◢◤◢◤◢◤  {Colors.NEON_GREEN}NEURAL INTERFACE  {Colors.NEON_PINK}◢◤◢◤◢◤  {Colors.NEON_YELLOW}2077{Colors.NEON_PINK}  ║{Colors.END}
+{Colors.NEON_PINK}    ╚═══════════════════════════════════════════════════════════════════════╝{Colors.END}
 
-{Colors.NEON_CYAN}[{Colors.NEON_YELLOW}SYSTEM{Colors.NEON_CYAN}]{Colors.END} Workspace initialized  > {Colors.NEON_GREEN}{self.workspace.root}{Colors.END}
-{Colors.NEON_CYAN}[{Colors.NEON_YELLOW}SYSTEM{Colors.NEON_CYAN}]{Colors.END} Logging system        > {Colors.NEON_GREEN}ONLINE{Colors.END}
-{Colors.NEON_CYAN}[{Colors.NEON_YELLOW}SYSTEM{Colors.NEON_CYAN}]{Colors.END} Neural cores loaded   > {Colors.NEON_GREEN}4/4 MODULES{Colors.END}
+{Colors.NEON_CYAN}        ███╗   ██╗███████╗████████╗██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗███████╗██████╗ 
+        ████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║   ██║████╗  ██║████╗  ██║██╔════╝██╔══██╗
+        ██╔██╗ ██║█████╗     ██║   ██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║█████╗  ██████╔╝
+        ██║╚██╗██║██╔══╝     ██║   ██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║██╔══╝  ██╔══██╗
+        ██║ ╚████║███████╗   ██║   ██║  ██║╚██████╔╝██║ ╚████║██║ ╚████║███████╗██║  ██║
+        ╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝{Colors.END}
 
-{Colors.NEON_PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.END}
+{Colors.NEON_PINK}    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.END}
+{Colors.NEON_PURPLE}          eJPT SECURITY FRAMEWORK v2.0  {Colors.GRAY}|{Colors.END}  {Colors.NEON_GREEN}ネットランナー{Colors.END} {Colors.GRAY}|{Colors.END}  {Colors.NEON_YELLOW}侵入テスト{Colors.END}
+{Colors.NEON_PINK}    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.END}
+
+{Colors.NEON_GREEN}    [√]{Colors.END} {Colors.NEON_CYAN}NEURAL LINK{Colors.END}      {Colors.NEON_GREEN}███████████████{Colors.GRAY}░░░{Colors.END} {Colors.NEON_GREEN}85%{Colors.END}
+{Colors.NEON_GREEN}    [√]{Colors.END} {Colors.NEON_CYAN}WORKSPACE{Colors.END}        {Colors.NEON_PINK}{self.workspace.root}{Colors.END}
+{Colors.NEON_GREEN}    [√]{Colors.END} {Colors.NEON_CYAN}EXPLOIT DB{Colors.END}       {Colors.NEON_GREEN}LOADED{Colors.END} {Colors.GRAY}[{Colors.NEON_YELLOW}4 MODULES{Colors.GRAY}]{Colors.END}
+{Colors.NEON_GREEN}    [√]{Colors.END} {Colors.NEON_CYAN}LOGGING SYS{Colors.END}      {Colors.NEON_GREEN}ACTIVE{Colors.END} {Colors.GRAY}[{Colors.NEON_YELLOW}3 STREAMS{Colors.GRAY}]{Colors.END}
+
+{Colors.NEON_PINK}    ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰{Colors.END}
+{Colors.NEON_YELLOW}           WAKE UP SAMURAI...  WE HAVE A NETWORK TO BURN{Colors.END}
+{Colors.NEON_PINK}    ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰{Colors.END}
 """
-        print(banner)
+    print(banner)
 
     def cyber_footer(self):
         """Display footer message"""
