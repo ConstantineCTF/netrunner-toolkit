@@ -76,4 +76,4 @@ class WebHunter:
         try:
             subprocess.run(cmd, shell=True, timeout=300)
             print(f"\n{Colors.cyber_success('Directory mapping complete')}")
-            print(f"{Colors.NEON_CYAN}[OUTPUT]{Colors.END} {Colors.NEON_GREEN}{output_file
+            print(f"{Colors.NEON_CYAN}[OUTPUT]{Colors.END} {Colors.NEON_GREEN}{output_file}{Colors.END}\n")
