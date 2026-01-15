@@ -26,9 +26,9 @@ class NetRunner:
         self.exploit_gen = ExploitGenerator(self.workspace)
         self.report_gen = ReportGenerator(self.workspace, self.logger)
 
-    def cyber_banner(self):
-    """Display cyberpunk-themed banner - Night City Edition"""
-    banner = f"""
+        def cyber_banner(self):
+        """Display cyberpunk-themed banner - Night City Edition"""
+        banner = f"""
 {Colors.NEON_PINK}    ╔═══════════════════════════════════════════════════════════════════════╗{Colors.END}
 {Colors.NEON_PINK}    ║ {Colors.NEON_CYAN}サイバーパンク  {Colors.NEON_PINK}◢◤◢◤◢◤  {Colors.NEON_GREEN}NEURAL INTERFACE  {Colors.NEON_PINK}◢◤◢◤◢◤  {Colors.NEON_YELLOW}2077{Colors.NEON_PINK}  ║{Colors.END}
 {Colors.NEON_PINK}    ╚═══════════════════════════════════════════════════════════════════════╝{Colors.END}
@@ -50,10 +50,10 @@ class NetRunner:
 {Colors.NEON_GREEN}    [√]{Colors.END} {Colors.NEON_CYAN}LOGGING SYS{Colors.END}      {Colors.NEON_GREEN}ACTIVE{Colors.END} {Colors.GRAY}[{Colors.NEON_YELLOW}3 STREAMS{Colors.GRAY}]{Colors.END}
 
 {Colors.NEON_PINK}    ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰{Colors.END}
-{Colors.NEON_YELLOW}           WAKE UP SAMURAI...  WE HAVE A NETWORK TO BURN{Colors.END}
+{Colors.NEON_YELLOW}           WAKE UP SAMURAI... WE HAVE A NETWORK TO BURN{Colors.END}
 {Colors.NEON_PINK}    ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰{Colors.END}
 """
-    print(banner)
+        print(banner)
 
     def cyber_footer(self):
         """Display footer message"""
