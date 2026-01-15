@@ -29,18 +29,18 @@ class NetRunner:
     def cyber_banner(self):
         """Display cyberpunk-themed banner"""
         banner = f"""
-{Colors.NEON_CYAN}╔═══════════════════════════════════════════════════════════════════════╗
-║                                                                       ║
+{Colors.NEON_CYAN}╔═════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                                       ║
 ║  {Colors.NEON_PINK}███╗   ██╗███████╗████████╗██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗███████╗██████╗{Colors.NEON_CYAN}  ║
 ║  {Colors.NEON_PINK}████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║   ██║████╗  ██║████╗  ██║██╔════╝██╔══██╗{Colors.NEON_CYAN} ║
 ║  {Colors.NEON_PINK}██╔██╗ ██║█████╗     ██║   ██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║█████╗  ██████╔╝{Colors.NEON_CYAN} ║
 ║  {Colors.NEON_PINK}██║╚██╗██║██╔══╝     ██║   ██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║██╔══╝  ██╔══██╗{Colors.NEON_CYAN} ║
 ║  {Colors.NEON_PINK}██║ ╚████║███████╗   ██║   ██║  ██║╚██████╔╝██║ ╚████║██║ ╚████║███████╗██║  ██║{Colors.NEON_CYAN} ║
 ║  {Colors.NEON_PINK}╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝{Colors.NEON_CYAN} ║
-║                                                                       ║
-║          {Colors.NEON_PURPLE}eJPT Security Assessment Framework v2.0{Colors.NEON_CYAN}                    ║
-║          {Colors.NEON_GREEN}Neural Interface:  ACTIVE | Status:  OPERATIONAL{Colors.NEON_CYAN}            ║
-╚═══════════════════════════════════════════════════════════════════════╝{Colors.END}
+║                                                                                                                       ║
+║          {Colors.NEON_PURPLE}eJPT Security Assessment Framework v2.0{Colors.NEON_CYAN}                                ║
+║          {Colors.NEON_GREEN}Neural Interface:  ACTIVE | Status:  OPERATIONAL{Colors.NEON_CYAN}                        ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝{Colors.END}
 
 {Colors.NEON_CYAN}[{Colors.NEON_YELLOW}SYSTEM{Colors.NEON_CYAN}]{Colors.END} Workspace initialized  > {Colors.NEON_GREEN}{self.workspace.root}{Colors.END}
 {Colors.NEON_CYAN}[{Colors.NEON_YELLOW}SYSTEM{Colors.NEON_CYAN}]{Colors.END} Logging system        > {Colors.NEON_GREEN}ONLINE{Colors.END}
