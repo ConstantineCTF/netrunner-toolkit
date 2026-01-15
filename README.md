@@ -1211,7 +1211,7 @@ Cyberpunk theme inspired by:
 - **Community**: Join cybersecurity Discord servers and forums
 
 ### Contact
-- **GitHub**: [[repository link]](https://github.com/ConstantineCTF)
+- **GitHub**: [[ConstantineCTF]](https://github.com/ConstantineCTF)
 - **Email**: constantine.ctf@proton.me
 - **Twitter**: [[@constantinectf]](https://x.com/ConstantineCtf)
 
