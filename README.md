@@ -233,6 +233,7 @@ python-nmap>=0.7.1        # Python interface to Nmap (optional)
 ejpt_toolkit/
 │
 ├── ejpt_helper.py              # Main entry point - CLI interface
+├── cleanup_workspaces.sh       # Workspace cleanup utility
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # This file
 │
