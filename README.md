@@ -1161,8 +1161,7 @@ This tool is designed to support ethical hacking and authorized security assessm
 
 ## Credits
 ### Development
-- **Primary Developer**: [Your Name]
-- **Contributors**: [List contributors]
+- **Primary Developer**: ConstantineCTF
 
 ### Acknowledgments
 - **eLearnSecurity/INE**: For the eJPT certification program
@@ -1189,7 +1188,7 @@ Cyberpunk theme inspired by:
 ---
 
 ## Version History
-### v2.0.0 (2024-01-15)
+### v2.0.0 (2026-01-15)
 - Complete cyberpunk theme implementation
 - Modular architecture redesign
 - Enhanced payload generation
@@ -1197,7 +1196,7 @@ Cyberpunk theme inspired by:
 - Comprehensive documentation
 - Bug fixes and performance improvements
 
-### v1.0.0 (2024-01-01)
+### v1.0.0 (2026-01-15)
 - Initial release
 - Basic scanning functionality
 - Simple payload generation
@@ -1212,9 +1211,9 @@ Cyberpunk theme inspired by:
 - **Community**: Join cybersecurity Discord servers and forums
 
 ### Contact
-- **GitHub**: [repository link]
-- **Email**: [your email]
-- **Twitter**: [@yourhandle]
+- **GitHub**: [[repository link]](https://github.com/ConstantineCTF)
+- **Email**: constantine.ctf@proton.me
+- **Twitter**: [[@constantinectf]](https://x.com/ConstantineCtf)
 
 ---
 
