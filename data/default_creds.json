@@ -1,0 +1,72 @@
+{
+  "ssh": [
+    {"username": "root", "password": "root"},
+    {"username": "root", "password": "toor"},
+    {"username": "admin", "password": "admin"},
+    {"username": "administrator", "password": "administrator"},
+    {"username": "user", "password": "user"},
+    {"username": "pi", "password": "raspberry"},
+    {"username": "ubuntu", "password": "ubuntu"}
+  ],
+  "ftp": [
+    {"username": "anonymous", "password": ""},
+    {"username": "ftp", "password": "ftp"},
+    {"username": "admin", "password": "admin"},
+    {"username": "user", "password": "user"}
+  ],
+  "mysql": [
+    {"username": "root", "password": ""},
+    {"username": "root", "password": "root"},
+    {"username": "root", "password": "password"},
+    {"username": "root", "password": "toor"},
+    {"username": "admin", "password": "admin"}
+  ],
+  "postgres": [
+    {"username": "postgres", "password": "postgres"},
+    {"username": "postgres", "password": "password"},
+    {"username": "postgres", "password": "admin"}
+  ],
+  "mssql": [
+    {"username": "sa", "password": ""},
+    {"username": "sa", "password": "sa"},
+    {"username": "sa", "password": "password"}
+  ],
+  "mongodb": [
+    {"username": "admin", "password": "admin"},
+    {"username": "root", "password": "root"}
+  ],
+  "redis": [
+    {"username": "", "password": ""}
+  ],
+  "tomcat": [
+    {"username": "tomcat", "password": "tomcat"},
+    {"username": "admin", "password": "admin"},
+    {"username": "admin", "password": "password"},
+    {"username": "tomcat", "password": "s3cret"},
+    {"username": "admin", "password": "tomcat"}
+  ],
+  "web": [
+    {"username": "admin", "password": "admin"},
+    {"username": "admin", "password": "password"},
+    {"username": "administrator", "password": "administrator"},
+    {"username": "admin", "password": "admin123"},
+    {"username": "admin", "password": "password123"},
+    {"username": "admin", "password": "P@ssw0rd"},
+    {"username": "root", "password": "root"},
+    {"username": "root", "password": "toor"}
+  ],
+  "jenkins": [
+    {"username": "admin", "password": "admin"},
+    {"username": "admin", "password": "password"},
+    {"username": "jenkins", "password": "jenkins"}
+  ],
+  "grafana": [
+    {"username": "admin", "password": "admin"}
+  ],
+  "rabbitmq": [
+    {"username": "guest", "password": "guest"}
+  ],
+  "elasticsearch": [
+    {"username": "elastic", "password": "changeme"}
+  ]
+}
